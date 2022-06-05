@@ -1,0 +1,53 @@
+core site:
+
+<property>
+   <name>fs.defaulterFs</name>
+   <value> hdfs://localhost:900</value>
+</property>
+
+
+
+mapred-site:
+
+<property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+</property>
+
+
+yarn-site:
+
+
+<property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle></value>
+</property>
+
+<property>
+    <name>yarn.nodemanager.aux-services.mapreduce.shuffle</name>
+    <value>org.apache.hadoop.mapred.shufflehamdler</value>
+</property>
+
+
+hdfs-site:
+
+<property>
+    <name>dfs.replication</name>
+    <value>1</value>
+</property>
+
+<property>
+    <name>dfs.namenode.name.dir</name>
+    <value>location of name node file</value>
+</property>
+
+<property>
+    <name>dfs.datanode.name.dir</name>
+    <value>location of data node file</value>
+</property>
+
+hadoop-evn:
+
+idr hm nny jdk file open karni ha
+
+
